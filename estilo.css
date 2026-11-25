@@ -1,26 +1,39 @@
-body{
-    background-color: #0B2229;
-    color: white; align-items: first baseline;
+:root{
+    --fundo:#0B2229;
+    --color: white;
+    --dourado: #c9a45c;
 }
-
+body{
+    background-color: var(--fundo);
+    color: var(--color);
+}
    header {
      display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 30px; 
-}  h1{
-    margin: 0;
+            gap: 750px;}
+    nav{
+        display: flex;
+        gap: 30px;
+    }
+     nav a{ text-decoration: none;
+         padding: 5px;
+         border-bottom: 5px ;
+         color: inherit;
+
+    }
+    nav :hover{
+        border-bottom: var(--dourado);
+        color: var(--dourado);
+    }
+  .logo{ font-family:"Bodoni Moda", Georgia, serif;
+    margin: 0%;
+    font-size: 30px;
+    font-style: italic;
+    margin-right: auto;
 }
     hr{
-        color: white ;
+        color: var(--color);
         background-color: #0B2229;
         border-bottom: 1px;
+
     }
-    p{
-        
-    }
-
-
-
-
-
