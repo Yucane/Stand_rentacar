@@ -9,12 +9,22 @@
 body {
     background-color: var(--fundo);
     color: var(--color);
+    font-family: Manrope, system-ui, sans-serif;
+}
+
+h1, h2, h3 {
     font-family: "Bodoni Moda", Georgia, serif;
+    font-weight: 500;
 }
 
 header {
+    position: sticky;
+    top: 0;
+    background: var(--fundo);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
+    padding: 12px clamp(16px, 4vw, 48px);
 }
 
 nav {
@@ -42,12 +52,6 @@ nav a:hover {
     margin-right: auto;
 }
 
-hr {
-    color: var(--color);
-    background-color: #0B2229;
-    border-bottom: 1px;
-}
-
 .esconder {
     display: flex;
     align-items: center;
@@ -55,7 +59,6 @@ hr {
 }
 
 h1 {
-    font-family: Manrope, system-ui, sans-serif;
     justify-content: center;
 }
 
