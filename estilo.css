@@ -1,11 +1,15 @@
-:root{
-    --fundo:#0B2229;
+
+   :root{
+    --fundo:#0b2229;
     --color: white;
     --dourado: #c9a45c;
+    --suave: #9db1b4;
+    --painel:#11323b;
 }
 body{
     background-color: var(--fundo);
     color: var(--color);
+    font-family: "Bodoni Moda", Georgia, serif;
 }
    header {
      display: flex;
@@ -37,3 +41,27 @@ body{
         border-bottom: 1px;
 
     }
+    .esconder{ display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    h1{
+        font-family: Manrope, system-ui, sans-serif;
+    justify-content: center;
+    }
+    h1 i{
+        color: var(--dourado);
+    }
+    .wrap{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 48px);
+}
+.hero{
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: clamp(24px, 5vw, 70px);
+    align-items: center;
+    min-height: 70vh;
+}
