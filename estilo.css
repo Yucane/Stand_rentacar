@@ -1,64 +1,75 @@
-
-   :root{
-    --fundo:#0b2229;
+:root {
+    --fundo: #0b2229;
     --color: white;
     --dourado: #c9a45c;
     --suave: #9db1b4;
-    --painel:#11323b;
+    --painel: #11323b;
 }
-body{
+
+body {
     background-color: var(--fundo);
     color: var(--color);
     font-family: "Bodoni Moda", Georgia, serif;
 }
-   header {
-     display: flex;
-    align-items: center;
-            gap: 750px;}
-    nav{
-        display: flex;
-        gap: 30px;
-    }
-     nav a{ text-decoration: none;
-         padding: 5px;
-         border-bottom: 5px ;
-         color: inherit;
 
-    }
-    nav :hover{
-        border-bottom: var(--dourado);
-        color: var(--dourado);
-    }
-  .logo{ font-family:"Bodoni Moda", Georgia, serif;
+header {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+    color: inherit;
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--dourado);
+    color: var(--dourado);
+}
+
+.logo {
+    font-family: "Bodoni Moda", Georgia, serif;
     margin: 0%;
     font-size: 30px;
     font-style: italic;
     margin-right: auto;
 }
-    hr{
-        color: var(--color);
-        background-color: #0B2229;
-        border-bottom: 1px;
 
-    }
-    .esconder{ display: flex;
-        align-items: center;
-        justify-content: space-between;
+hr {
+    color: var(--color);
+    background-color: #0B2229;
+    border-bottom: 1px;
+}
 
-    }
-    h1{
-        font-family: Manrope, system-ui, sans-serif;
+.esconder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: Manrope, system-ui, sans-serif;
     justify-content: center;
-    }
-    h1 i{
-        color: var(--dourado);
-    }
-    .wrap{
+}
+
+h1 i {
+    color: var(--dourado);
+}
+
+.wrap {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 clamp(16px, 4vw, 48px);
 }
-.hero{
+
+.hero {
     display: grid;
     grid-template-columns: 1.05fr 1fr;
     gap: clamp(24px, 5vw, 70px);
