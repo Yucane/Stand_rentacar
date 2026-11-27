@@ -79,3 +79,47 @@ h1 i {
     align-items: center;
     min-height: 70vh;
 }
+
+.lead {
+    color: var(--suave);
+    max-width: 44ch;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--dourado);
+    color: var(--fundo);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    filter: brightness(1.12);
+}
+
+.mapa {
+    width: 100%;
+    max-height: 560px;
+    box-sizing: border-box;
+    background: var(--painel);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 18px;
+}
+
+@media (max-width: 860px) {
+    header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav {
+        gap: 14px;
+        font-size: 14px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+}
