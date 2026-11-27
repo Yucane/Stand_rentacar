@@ -21,6 +21,7 @@ header {
     position: sticky;
     top: 0;
     background: var(--fundo);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
     padding: 12px clamp(16px, 4vw, 48px);
@@ -49,12 +50,6 @@ nav a:hover {
     font-size: 30px;
     font-style: italic;
     margin-right: auto;
-}
-
-hr {
-    color: var(--color);
-    background-color: #0B2229;
-    border-bottom: 1px;
 }
 
 .esconder {
@@ -130,3 +125,11 @@ h1 i {
         grid-template-columns: 1fr;
     }
 }
+.other{ display: flex;
+    color: var(--dourado);
+    font-family: "Bodoni Moda", Georgia, serif;
+    justify-content: center;
+    font-size: 17px auto;
+}
+.hr1{ border-bottom: 1px;}
+.hr2{border-bottom: 1px;}
